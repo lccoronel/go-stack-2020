@@ -41,8 +41,8 @@ describe('ResetPasswordService', () => {
 
     const upadateUser = await fakeUsersRepository.findById(user.id);
 
-    expect(generateHash).toHaveBeenCalledWith('123123');
-    expect(upadateUser?.password).toBe('123123');
+    await expect(generateHash).toHaveBeenCalledWith('123123');
+    await expect(upadateUser?.password).toBe('123123');
   });
 
   it('should not be able to reset the password with non-existing token', async () => {
