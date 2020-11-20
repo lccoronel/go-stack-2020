@@ -16,11 +16,11 @@ class SendForgotPasswordEmailService {
     @inject('UsersRepository')
     private usersRepository: IUserRepository,
 
-    @inject('MailProvider')
-    private mailProvider: IMailProvider,
-
     @inject('UserTokensRepository')
     private userTokensRepository: IUserTokensRepository,
+
+    @inject('MailProvider')
+    private mailProvider: IMailProvider,
   ) {}
 
   public async execute({ email }: IRequest): Promise<void> {
@@ -50,7 +50,7 @@ class SendForgotPasswordEmailService {
         variables: {
           name: user.name,
           token,
-          link: `${process.env.APP_WEB_URL}/reset_password?token=${token}`,
+          link: `${process.env.APP_WEB_URL}/reset-password?token=${token}`,
         },
       },
     });
