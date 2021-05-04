@@ -8,7 +8,7 @@ import {
   TextInput,
   Alert,
 } from 'react-native';
-import { Feather as Icon } from '@expo/vector-icons';
+// import { Feather as Icon } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
@@ -104,7 +104,7 @@ const SignUp: React.FC = () => {
             <Form ref={formRef} onSubmit={handleSignUp}>
               <Input
                 name="name"
-                icon="user"
+                // icon="user"
                 placeholder="Nome"
                 autoCapitalize="words"
                 returnKeyType="next"
@@ -113,7 +113,7 @@ const SignUp: React.FC = () => {
               <Input
                 ref={emailInputRef}
                 name="email"
-                icon="mail"
+                // icon="mail"
                 placeholder="E-mail"
                 keyboardType="email-address"
                 autoCorrect={false}
@@ -124,7 +124,7 @@ const SignUp: React.FC = () => {
               <Input
                 ref={passwordInputRef}
                 name="password"
-                icon="lock"
+                // icon="lock"
                 placeholder="Senha"
                 secureTextEntry
                 textContentType="newPassword"
@@ -141,7 +141,7 @@ const SignUp: React.FC = () => {
       </KeyboardAvoidingView>
 
       <BackToSignInButton onPress={() => navigation.goBack()}>
-        <Icon name="arrow-left" size={20} color="#fff" />
+        {/* <Icon name="arrow-left" size={20} color="#fff" /> */}
         <BackToSignInButtonText>Voltar para logon</BackToSignInButtonText>
       </BackToSignInButton>
     </>

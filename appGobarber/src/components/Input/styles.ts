@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components/native';
-import { Feather as FeatherIcon } from '@expo/vector-icons';
+// import { Feather as FeatherIcon } from '@expo/vector-icons';
 
 interface ContainerProps {
   isFocused: boolean;
@@ -39,6 +39,6 @@ export const TextInput = styled.TextInput`
   font-family: 'RobotoSlab-Regular';
 `;
 
-export const Icon = styled(FeatherIcon)`
-  margin-right: 16px;
-`;
+// export const Icon = styled(FeatherIcon)`
+//   margin-right: 16px;
+// `;

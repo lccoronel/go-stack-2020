@@ -8,7 +8,7 @@ import {
   TextInput,
   Alert,
 } from 'react-native';
-import { Feather as Icon } from '@expo/vector-icons';
+// import { Feather as Icon } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
@@ -101,7 +101,7 @@ const SignIn: React.FC = () => {
             <Form ref={formRef} onSubmit={handleSignIn}>
               <Input
                 name="email"
-                icon="mail"
+                // icon="mail"
                 placeholder="E-mail"
                 autoCorrect={false}
                 autoCapitalize="none"
@@ -112,7 +112,7 @@ const SignIn: React.FC = () => {
               <Input
                 ref={passwordInputRef}
                 name="password"
-                icon="lock"
+                // icon="lock"
                 placeholder="Senha"
                 secureTextEntry
                 returnKeyType="send"
@@ -132,7 +132,7 @@ const SignIn: React.FC = () => {
       </KeyboardAvoidingView>
 
       <CreateAccountButton onPress={() => navigation.navigate('SignUp')}>
-        <Icon name="log-in" size={20} color="#ff9000" />
+        {/* <Icon name="log-in" size={20} color="#ff9000" /> */}
         <CreateAccountButtonText>Criar uma conta</CreateAccountButtonText>
       </CreateAccountButton>
     </>

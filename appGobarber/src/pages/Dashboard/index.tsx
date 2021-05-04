@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { Feather as Icon } from '@expo/vector-icons';
+// import { Feather as Icon } from '@expo/vector-icons';
 
 import { useAuth } from '../../hooks/auth';
 import {
@@ -80,12 +80,12 @@ const Dashboard: React.FC = () => {
               <ProviderName>{provider.name}</ProviderName>
 
               <ProviderMeta>
-                <Icon name="calendar" size={14} color="#ff9000" />
+                {/* <Icon name="calendar" size={14} color="#ff9000" /> */}
                 <ProviderMetaText>Segunda a sexta</ProviderMetaText>
               </ProviderMeta>
 
               <ProviderMeta>
-                <Icon name="clock" size={14} color="#ff9000" />
+                {/* <Icon name="clock" size={14} color="#ff9000" /> */}
                 <ProviderMetaText>Segunda a sexta</ProviderMetaText>
               </ProviderMeta>
             </ProviderInfo>
